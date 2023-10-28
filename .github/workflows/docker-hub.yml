@@ -24,7 +24,7 @@ jobs:
         steps:
             -   uses: actions/checkout@v2
             -   name: Test the Docker image
-                run: docker-ccompose up -d
+                run: docker-compose up -d
     
     push_to_registry:
         name: Push Docker image to Docker Hub
